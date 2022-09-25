@@ -31,19 +31,12 @@ img {
 
 .gallery {
   list-style: none;
-  display: flex;
   padding: 0;
-}
-
-.gallery__item {
-  width: calc((100% - 60px) / 3);
-}
-.gallery__item:not(:last-child) {
-  margin-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 30px;
 }
 
 .gallery__image {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }

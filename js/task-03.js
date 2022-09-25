@@ -15,7 +15,7 @@ const images = [
 
 const makeGalleryItemMarkup = ({ url, alt }) => {
   return `
-  <li class="gallery__item">
+  <li>
    <img class="gallery__image" src=${url} alt=${alt}>
   </li>
   `;
